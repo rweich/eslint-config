@@ -1,0 +1,56 @@
+{
+  "name": "@rweich/eslint-config",
+  "version": "0.0.0-development",
+  "description": "eslint config for my projects",
+  "author": "rweich",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint test/**/*.ts",
+    "test": "tape -r ts-node/register/transpile-only test/**/*.Test.ts | tap-spec"
+  },
+  "peerDependencies": {
+    "prettier": "^2",
+    "typescript": "^4"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-array-func": "^3.1.7",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-unicorn": "^29.0.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.7",
+    "@types/tape": "^4.13.0",
+    "prettier": "npm:@btmills/prettier",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.2.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rweich/eslint-config.git"
+  },
+  "files": [
+    "README.md",
+    "index.js"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "coding",
+    "rules",
+    "style"
+  ]
+}
