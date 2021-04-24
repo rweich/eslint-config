@@ -5,7 +5,7 @@ default config for my ts-projects
 ## Installation
 1. Install dependencies
     ```shell
-    yarn add --dev eslint prettier typescript @rweich/eslint-config
+    yarn add --dev @rweich/eslint-config
     ```
 
 1. Configure
