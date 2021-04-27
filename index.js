@@ -68,6 +68,7 @@ module.exports = {
         ],
       },
     ],
+    'array-func/prefer-array-from': 0,
     'node/no-missing-import': [
       'error',
       {
@@ -92,5 +93,6 @@ module.exports = {
         case: 'pascalCase',
       },
     ],
+    'unicorn/prefer-spread': 0,
   },
 };

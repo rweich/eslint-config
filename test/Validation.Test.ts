@@ -44,3 +44,9 @@ test('finds no errors on valid node import', async (t) => {
   t.equal(result[0].errorCount, 0, 'should have no errors');
   t.end();
 });
+test('finds no errors on valid to-array-syntax', async (t) => {
+  const result = await esLint.lintFiles('test/fixtures/ValidToArray.ts');
+  t.equal(result.length, 1, 'linter should create one result');
+  t.equal(result[0].errorCount, 0, 'should have no errors');
+  t.end();
+});
