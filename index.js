@@ -91,6 +91,7 @@ module.exports = {
       'error',
       {
         case: 'pascalCase',
+        ignore: [/\.d\.ts$/, /\.config\.[jt]s$/],
       },
     ],
     'unicorn/prefer-spread': 0,

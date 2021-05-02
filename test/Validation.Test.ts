@@ -50,3 +50,11 @@ test('finds no errors on valid to-array-syntax', async (t) => {
   t.equal(result[0].errorCount, 0, 'should have no errors');
   t.end();
 });
+test('finds no errors on valid filenames', async (t) => {
+  const result = await esLint.lintFiles('test/fixtures/filenames/**');
+  t.equal(result.length, 3, 'linter should create three results');
+  for (const r of result) {
+    t.equal(r.errorCount, 0, 'should have no errors');
+  }
+  t.end();
+});
