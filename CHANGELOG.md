@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/rweich/eslint-config/compare/v1.0.3...v1.1.0) (2021-05-08)
+
+
+### Features
+
+* add resolver for typescript ([e9c4d7d](https://github.com/rweich/eslint-config/commit/e9c4d7dcdb47584bbd331fec68843d6ece7ed0e6))
+
 ## [1.0.3](https://github.com/rweich/eslint-config/compare/v1.0.2...v1.0.3) (2021-05-02)
 
 
