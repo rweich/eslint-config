@@ -69,12 +69,7 @@ module.exports = {
       },
     ],
     'array-func/prefer-array-from': 0,
-    'node/no-missing-import': [
-      'error',
-      {
-        tryExtensions: ['.js', '.ts'],
-      },
-    ],
+    'node/no-missing-import': 0,
     'prettier/prettier': [
       'error',
       {
@@ -95,5 +90,12 @@ module.exports = {
       },
     ],
     'unicorn/prefer-spread': 0,
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
   },
 };
