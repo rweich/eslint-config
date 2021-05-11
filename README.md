@@ -31,8 +31,8 @@ default config for my ts-projects
     ```json
     {
       "scripts": {
-        "lint": "eslint ./src/**/*.ts",
-        "lint-tests": "eslint test/**/*.ts"
+        "lint": "eslint 'src/**/*.ts'",
+        "lint-tests": "eslint 'test/**/*.ts'"
       }
     }
     ```
