@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.1](https://github.com/rweich/eslint-config/compare/v1.1.0...v1.1.1) (2021-06-12)
+
+
+### Bug Fixes
+
+* replace tap-spec with tap-spec-emoji ([#3](https://github.com/rweich/eslint-config/issues/3)) ([48ff816](https://github.com/rweich/eslint-config/commit/48ff816251f4dee45ad252e07111cf9628bb778c))
+
+
+### Miscellaneous Chores
+
+* update dependencies ([#4](https://github.com/rweich/eslint-config/issues/4)) ([493dd44](https://github.com/rweich/eslint-config/commit/493dd444023c07c55c90c5930a59df636173ac07))
+
 # [1.1.0](https://github.com/rweich/eslint-config/compare/v1.0.3...v1.1.0) (2021-05-08)
 
 
