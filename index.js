@@ -17,6 +17,7 @@ module.exports = {
     project: './tsconfig.json',
     sourceType: 'module',
   },
+  plugins: ['sort-class-members'],
   rules: {
     '@typescript-eslint/lines-between-class-members': [
       'error',
@@ -78,6 +79,13 @@ module.exports = {
         singleQuote: true,
         tabWidth: 2,
         trailingComma: 'all',
+      },
+    ],
+    'sort-class-members/sort-class-members': [
+      'error',
+      {
+        accessorPairPositioning: 'getThenSet',
+        order: ['[properties]', 'constructor', '[accessor-pairs]', '[getters]', '[setters]', '[everything-else]'],
       },
     ],
     'sort-imports': 'error',

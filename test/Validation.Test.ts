@@ -32,8 +32,20 @@ test('finds errors on invalid member ordering (method)', async (t) => {
   t.equal(result[0].errorCount, 1, 'should have one errors');
   t.end();
 });
+test('finds errors on invalid member ordering (getter)', async (t) => {
+  const result = await esLint.lintFiles('test/fixtures/InvalidMemberOrderingGetter.ts');
+  t.equal(result.length, 1, 'linter should create one result');
+  t.equal(result[0].errorCount, 1, 'should have one errors');
+  t.end();
+});
 test('finds no errors on a valid file', async (t) => {
   const result = await esLint.lintFiles('test/fixtures/Valid.ts');
+  t.equal(result.length, 1, 'linter should create one result');
+  t.equal(result[0].errorCount, 0, 'should have no errors');
+  t.end();
+});
+test('finds no errors on valid member ordering', async (t) => {
+  const result = await esLint.lintFiles('test/fixtures/ValidMemberOrdering.ts');
   t.equal(result.length, 1, 'linter should create one result');
   t.equal(result[0].errorCount, 0, 'should have no errors');
   t.end();
