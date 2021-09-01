@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.3](https://github.com/rweich/eslint-config/compare/v1.1.2...v1.1.3) (2021-09-01)
+
+
+### Miscellaneous Chores
+
+* update dependencies ([e0edb43](https://github.com/rweich/eslint-config/commit/e0edb43a1847201cf815db11e4c4088e6c36821e))
+* **deps:** bump tar from 6.1.5 to 6.1.11 ([733f491](https://github.com/rweich/eslint-config/commit/733f491324c9286140d8e7d665ddb5562ea9a0de))
+
 ### [1.1.2](https://github.com/rweich/eslint-config/compare/v1.1.1...v1.1.2) (2021-08-05)
 
 
