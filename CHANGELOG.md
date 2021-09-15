@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.1.4](https://github.com/rweich/eslint-config/compare/v1.1.3...v1.1.4) (2021-09-15)
+
+
+### Miscellaneous Chores
+
+* update dependencies ([34f65b8](https://github.com/rweich/eslint-config/commit/34f65b8d52c57bb85361549f4d80c43b8b4062ae))
+
 ### [1.1.3](https://github.com/rweich/eslint-config/compare/v1.1.2...v1.1.3) (2021-09-01)
 
 
