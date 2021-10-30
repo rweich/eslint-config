@@ -1,6 +1,6 @@
-name: Release
+name: Test-Release
 
-on: workflow_dispatch
+on: [ push, pull_request ]
 
 jobs:
   release:
@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: '14.17'
       - run: yarn install
-      - name: Release
+      - name: Release Test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: yarn semantic-release
+        run: yarn semantic-release --dry-run
