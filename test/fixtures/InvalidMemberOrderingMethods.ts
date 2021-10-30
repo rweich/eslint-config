@@ -1,6 +1,6 @@
 export class InvalidMemberOrderingMethods {
   private path(): string {
-    return __dirname;
+    return 'foo';
   }
 
   public foo(): void {

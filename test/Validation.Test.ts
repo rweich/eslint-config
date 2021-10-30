@@ -11,13 +11,13 @@ test('finds errors on invalid class-member-padding', async (t) => {
 test('finds errors on invalid import order', async (t) => {
   const result = await esLint.lintFiles('test/fixtures/InvalidImportOrder.ts');
   t.equal(result.length, 1, 'linter should create one result');
-  t.equal(result[0].errorCount, 1, 'should have one errors');
+  t.equal(result[0].errorCount, 1, 'should have one error');
   t.end();
 });
 test('finds errors on invalid key order', async (t) => {
   const result = await esLint.lintFiles('test/fixtures/InvalidKeyOrder.ts');
   t.equal(result.length, 1, 'linter should create one result');
-  t.equal(result[0].errorCount, 1, 'should have one errors');
+  t.equal(result[0].errorCount, 1, 'should have one error');
   t.end();
 });
 test('finds errors on invalid member ordering (field)', async (t) => {
@@ -29,7 +29,7 @@ test('finds errors on invalid member ordering (field)', async (t) => {
 test('finds errors on invalid member ordering (method)', async (t) => {
   const result = await esLint.lintFiles('test/fixtures/InvalidMemberOrderingMethods.ts');
   t.equal(result.length, 1, 'linter should create one result');
-  t.equal(result[0].errorCount, 1, 'should have one errors');
+  t.equal(result[0].errorCount, 1, 'should have one error');
   t.end();
 });
 test('finds no errors on a valid file', async (t) => {
