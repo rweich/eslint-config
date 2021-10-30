@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 
 export default class Valid {
   public readonly one = 'one';
@@ -11,7 +11,7 @@ export default class Valid {
   }
 
   private path() {
-    return path.dirname(__filename);
+    return path.dirname('foo');
   }
 }
 
