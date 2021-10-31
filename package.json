@@ -26,6 +26,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unicorn": "^37.0.1",
     "prettier": "npm:@btmills/prettier"
   },
@@ -45,10 +46,7 @@
   "engines": {
     "node": ">=14.17"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rweich/eslint-config.git"
-  },
+  "repository": "rweich/eslint-config",
   "files": [
     "README.md",
     "index.js"
