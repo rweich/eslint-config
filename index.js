@@ -1,3 +1,4 @@
+/* eslint-disable-next-line unicorn/prefer-module */
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
@@ -17,6 +18,7 @@ module.exports = {
     project: './tsconfig.json',
     sourceType: 'module',
   },
+  plugins: ['simple-import-sort'],
   rules: {
     '@typescript-eslint/lines-between-class-members': [
       'error',
@@ -69,6 +71,9 @@ module.exports = {
       },
     ],
     'array-func/prefer-array-from': 0,
+    'import/first': 'error',
+    'import/newline-after-import': 'error',
+    'import/no-duplicates': 'error',
     'node/no-missing-import': 0,
     'prettier/prettier': [
       'error',
@@ -80,7 +85,8 @@ module.exports = {
         trailingComma: 'all',
       },
     ],
-    'sort-imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'simple-import-sort/imports': 'error',
     'sort-keys': 'error',
     'unicorn/filename-case': [
       'error',

@@ -2,6 +2,12 @@ import { ESLint } from 'eslint';
 import test from 'tape';
 
 const esLint: ESLint = new ESLint();
+test('finds errors on invalid import ordering', async (t) => {
+  const result = await esLint.lintFiles('./test/fixtures/ImportOrder.ts');
+  t.equal(result.length, 1, 'linter should create one result');
+  t.equal(result[0].errorCount, 1, 'should have one error');
+  t.end();
+});
 test('finds errors on invalid class-member-padding', async (t) => {
   const result = await esLint.lintFiles('./test/fixtures/InvalidClassMemberPadding.ts');
   t.equal(result.length, 1, 'linter should create one result');
