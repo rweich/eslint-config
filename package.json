@@ -35,6 +35,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@rweich/semantic-release-config": "^2.0.0",
     "@types/eslint": "^8.2.1",
+    "@types/node": "*",
     "@types/tape": "^4.13.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
