@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/rweich/eslint-config/compare/v1.1.4...v2.0.0) (2022-01-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* no more node v15 as its no lts, outdated and breaking
+my builds
+* the minimum required version of node is now v14.17
+
+### Features
+
+* add import-sort plugin ([75f6d3e](https://github.com/rweich/eslint-config/commit/75f6d3eb38f6db412950a4f613d6f4291cf928a3))
+
+
+### Miscellaneous Chores
+
+* add missing @types/node package ([335e934](https://github.com/rweich/eslint-config/commit/335e93401c2415a6f932d9c4378db6c0eb6d5ff8))
+* drop support of node15 ([07772ad](https://github.com/rweich/eslint-config/commit/07772ad11a0633e119fa73ba5a50fc91aa5c9ecb))
+* update all dependencies (major) ([b440971](https://github.com/rweich/eslint-config/commit/b440971397b8ec492df763456ca35864581faeb2))
+* update dependencies ([bbb821e](https://github.com/rweich/eslint-config/commit/bbb821ea2e4e7d3611d0de470da53c48d9f84f80))
+* update unicorn and eslint-types ([4f7be57](https://github.com/rweich/eslint-config/commit/4f7be574ae509a9c8f895823342f882076407ba4))
+
 ### [1.1.4](https://github.com/rweich/eslint-config/compare/v1.1.3...v1.1.4) (2021-09-15)
 
 
