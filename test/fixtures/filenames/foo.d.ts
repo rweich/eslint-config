@@ -1,1 +1,1 @@
-// foo
+export const foo = 1;
