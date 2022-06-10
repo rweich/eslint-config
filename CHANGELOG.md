@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.4](https://github.com/rweich/eslint-config/compare/v2.0.3...v2.0.4) (2022-06-10)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** bump semantic-release from 19.0.2 to 19.0.3 ([f066906](https://github.com/rweich/eslint-config/commit/f066906180b7679bf9cc64ad0a837926f7561bc6))
+
 ### [2.0.3](https://github.com/rweich/eslint-config/compare/v2.0.2...v2.0.3) (2022-06-04)
 
 
