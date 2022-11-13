@@ -1,25 +1,41 @@
 name: Test-Release
 
 on:
-  pull_request:
-    types: [ labeled ]
+  push
+  pull_request
+
 jobs:
   release:
 
     runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.labels.*.name, 'to-be-released')
 
     steps:
       - name: Get branch name
-        id: branch-name
         uses: tj-actions/branch-names@v5
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        id: branch-name
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+        id: semantic
         with:
-          node-version: 16
-      - run: yarn install
-      - name: Release Test
+          dry_run: true
+          semantic_version: 19.0.2
+          branch: ${{ steps.branch-name.outputs.current_branch }}
+          extends: @rweich/semantic-release-config@^2.0.1
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: yarn semantic-release --dry-run --branches ${{ steps.branch-name.outputs.current_branch }}
+
+      - name: Test Outputs
+        if: steps.semantic.outputs.new_release_published == 'true'
+        run: |
+          echo ${{ steps.semantic.outputs.new_release_version }}
+          echo ${{ steps.semantic.outputs.new_release_major_version }}
+          echo ${{ steps.semantic.outputs.new_release_minor_version }}
+          echo ${{ steps.semantic.outputs.new_release_patch_version }}
