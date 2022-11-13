@@ -1,8 +1,8 @@
 name: Test-Release
 
 on:
-  push
-  pull_request
+  push:
+  pull_request:
 
 jobs:
   release:
@@ -24,7 +24,8 @@ jobs:
           dry_run: true
           semantic_version: 19.0.2
           branch: ${{ steps.branch-name.outputs.current_branch }}
-          extends: @rweich/semantic-release-config@^2.0.1
+          extends: |
+            @rweich/semantic-release-config@^2.0.6
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
@@ -35,7 +36,4 @@ jobs:
       - name: Test Outputs
         if: steps.semantic.outputs.new_release_published == 'true'
         run: |
-          echo ${{ steps.semantic.outputs.new_release_version }}
-          echo ${{ steps.semantic.outputs.new_release_major_version }}
-          echo ${{ steps.semantic.outputs.new_release_minor_version }}
-          echo ${{ steps.semantic.outputs.new_release_patch_version }}
+          echo release version: ${{ steps.semantic.outputs.new_release_version }}
