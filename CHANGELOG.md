@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.5](https://github.com/rweich/eslint-config/compare/v2.0.4...v2.0.5) (2022-11-13)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump minimatch from 3.0.4 to 3.1.2 ([b8ae339](https://github.com/rweich/eslint-config/commit/b8ae339cec47e077ec901ef3ad43b9d3bc025945))
+
 ### [2.0.4](https://github.com/rweich/eslint-config/compare/v2.0.3...v2.0.4) (2022-06-10)
 
 
