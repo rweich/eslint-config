@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.7](https://github.com/rweich/eslint-config/compare/v2.0.6...v2.0.7) (2022-11-27)
+
+
+### Bug Fixes
+
+* allow endpoint for commitlint workflow ([ebf72a2](https://github.com/rweich/eslint-config/commit/ebf72a26b6ae2d467e89b4cece1ee60f05790e3c))
+* workflows not appearing in the status-checks dropdown ([ce667f1](https://github.com/rweich/eslint-config/commit/ce667f1ee88f03804e14282ade3388326c000efb))
+
 ## [2.0.6](https://github.com/rweich/eslint-config/compare/v2.0.5...v2.0.6) (2022-11-27)
 
 
