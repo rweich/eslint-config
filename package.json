@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint 'test/**/*'",
-    "prepare": "husky install",
+    "prepare": "is-ci || husky install",
     "test": "tape -r ts-node/register/transpile-only test/**/*.Test.ts"
   },
   "peerDependencies": {
@@ -38,6 +38,7 @@
     "@types/node": "18.11.9",
     "@types/tape": "^4.13.0",
     "husky": "^8.0.2",
+    "is-ci": "^3.0.1",
     "lint-staged": "^13.0.4",
     "semantic-release": "^19.0.2",
     "tape": "^5.4.1",
