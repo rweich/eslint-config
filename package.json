@@ -1,6 +1,6 @@
 {
   "name": "@rweich/eslint-config",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "eslint config for my projects",
   "author": "rweich",
   "license": "MIT",
