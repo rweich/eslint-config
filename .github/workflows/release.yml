@@ -24,6 +24,14 @@ jobs:
         with:
           persist-credentials: false
 
+      # we only need the two install-steps as long we have husky running as prepare script (which runs on publish)
+      - name: Install Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@8f6ceb9d5aae5578b1dcda6af00008235204e7fa # 3.2
         id: semantic
