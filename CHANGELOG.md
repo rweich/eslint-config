@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.8](https://github.com/rweich/eslint-config/compare/v2.0.7...v2.0.8) (2022-11-29)
+
+
+### Bug Fixes
+
+* add yarn registry to allowed endpoints ([384373b](https://github.com/rweich/eslint-config/commit/384373b483411584b867feb15498849e8bcce3b6))
+* release workflow ([a4ff415](https://github.com/rweich/eslint-config/commit/a4ff415627b0734d9e7c1c2de96e8bf4d3854f89))
+
 ## [2.0.7](https://github.com/rweich/eslint-config/compare/v2.0.6...v2.0.7) (2022-11-27)
 
 
