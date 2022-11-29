@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://github.com/rweich/eslint-config/compare/v2.0.8...v2.0.9) (2022-11-29)
+
+
+### Bug Fixes
+
+* change harden runner config for release workflow ([0aa399d](https://github.com/rweich/eslint-config/commit/0aa399dc027249884464a2b31c0526d333b5b225))
+
 ## [2.0.8](https://github.com/rweich/eslint-config/compare/v2.0.7...v2.0.8) (2022-11-29)
 
 
