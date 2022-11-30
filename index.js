@@ -35,7 +35,6 @@ module.exports = {
           // Fields
           'public-abstract-field',
           'protected-abstract-field',
-          'private-abstract-field',
           'public-static-field',
           'protected-static-field',
           'private-static-field',
@@ -54,7 +53,6 @@ module.exports = {
           // Methods
           'public-abstract-method',
           'protected-abstract-method',
-          'private-abstract-method',
 
           'public-static-method',
           'protected-static-method',
