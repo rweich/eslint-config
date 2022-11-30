@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://github.com/rweich/eslint-config/compare/v2.0.9...v2.0.10) (2022-11-30)
+
+
+### Bug Fixes
+
+* member-ordering configuration ([9a0ea13](https://github.com/rweich/eslint-config/commit/9a0ea13be7cf424c66cfa65fa5b8ff61cf8d186d))
+
 ## [2.0.9](https://github.com/rweich/eslint-config/compare/v2.0.8...v2.0.9) (2022-11-29)
 
 
