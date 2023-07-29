@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.11](https://github.com/rweich/eslint-config/compare/v2.0.10...v2.0.11) (2023-07-29)
+
+
+### Miscellaneous Chores
+
+* **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([c1b458f](https://github.com/rweich/eslint-config/commit/c1b458ff967041ccf3d41f5fe3712b43ab5814f9))
+* **deps:** bump json5 from 1.0.1 to 1.0.2 ([eb13372](https://github.com/rweich/eslint-config/commit/eb13372addee6bdc8e1f512dd7088389b69b2401))
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([377c016](https://github.com/rweich/eslint-config/commit/377c016b8e248baf7ef2f869726e8147e6886e13))
+* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([3c1d66d](https://github.com/rweich/eslint-config/commit/3c1d66d330250a455e3b568d9729d269013ce94c))
+
 ## [2.0.10](https://github.com/rweich/eslint-config/compare/v2.0.9...v2.0.10) (2022-11-30)
 
 
