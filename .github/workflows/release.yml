@@ -22,20 +22,21 @@ jobs:
             registry.yarnpkg.com:443
 
       - name: Checkout
-        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # 3.1.0
+        uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # 3.5.3
         with:
           persist-credentials: false
+          token: ${{ secrets.SEMANTIC_RELEASE_PAT }}
 
       # we only need the two install-steps as long we have husky running as prepare script (which runs on publish)
       - name: Install Node
-        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # 3.5.1
+        uses: actions/setup-node@5e21ff4d9bc1a8cf6de233a3057d20ec6b3fb69d # 3.8.1
         with:
           node-version: 16
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@8f6ceb9d5aae5578b1dcda6af00008235204e7fa # 3.2
+        uses: cycjimmy/semantic-release-action@8e58d20d0f6c8773181f43eb74d6a05e3099571d # 3.4.2
         id: semantic
         with:
           semantic_version: 19.0.2
@@ -50,6 +51,23 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 
       - name: Outputs
-        if: steps.semantic.outputs.new_release_published == 'true'
         run: |
-          echo release version: ${{ steps.semantic.outputs.new_release_version }}
+          cat <<EOO >> $GITHUB_STEP_SUMMARY
+            ---
+
+            ### Semantic release output
+
+            <table>
+              <tr><th>published</th><td>${{ steps.semantic.outputs.new_release_published }}</td></tr>
+              <tr><th>last release</th><td>${{ steps.semantic.outputs.last_release_version }}</td></tr>
+              <tr><th>next release</th><td>${{ steps.semantic.outputs.new_release_version }}</td></tr>
+            </table>
+
+            ---
+
+            #### Release-Notes
+
+            ${{ steps.semantic.outputs.new_release_notes }}
+
+          ---
+          EOO
