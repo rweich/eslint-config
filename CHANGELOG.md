@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/rweich/eslint-config/compare/v2.0.11...v3.0.0) (2023-08-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* no more node14
+* will probably break as long prettier is not updated as
+well
+
+### Features
+
+* update major dependencies ([197ef44](https://github.com/rweich/eslint-config/commit/197ef4441c58c2f84b826dabe9c24d50ba214922))
+
+
+### Miscellaneous Chores
+
+* drop support for node 14 ([7e187f4](https://github.com/rweich/eslint-config/commit/7e187f4a82c6f20e6ff0abce81413d13549c893e))
+
 ## [2.0.11](https://github.com/rweich/eslint-config/compare/v2.0.10...v2.0.11) (2023-07-29)
 
 
