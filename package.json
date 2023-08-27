@@ -45,7 +45,7 @@
     "typescript": "^4.5.5"
   },
   "engines": {
-    "node": ">=14.17"
+    "node": ">=16"
   },
   "repository": "rweich/eslint-config",
   "files": [
