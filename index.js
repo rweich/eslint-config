@@ -94,6 +94,7 @@ module.exports = {
       },
     ],
     'unicorn/prefer-spread': 0,
+    'unicorn/switch-case-braces': ['error', 'avoid'],
   },
   settings: {
     'import/resolver': {
