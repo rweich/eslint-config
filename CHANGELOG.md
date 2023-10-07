@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/rweich/eslint-config/compare/v3.0.0...v4.0.0) (2023-10-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* node versions < v18.17 are not longer supported, as
+they're end-of-life
+
+### Features
+
+* set unicorn/switch-case-braces to 'avoid' ([3111516](https://github.com/rweich/eslint-config/commit/3111516f770e310a34075e7f5e18240196daab00))
+
+
+### Miscellaneous Chores
+
+* **deps:** bump actions/checkout from 3.5.3 to 3.6.0 ([3496579](https://github.com/rweich/eslint-config/commit/34965795fda5c523b1aaa378f635e0cc23356b8d))
+* **deps:** bump actions/checkout from 3.6.0 to 4.0.0 ([aa61d6e](https://github.com/rweich/eslint-config/commit/aa61d6ebce2da78d756714a49ae2a6429716afa3))
+* **deps:** bump actions/checkout from 4.0.0 to 4.1.0 ([90ee972](https://github.com/rweich/eslint-config/commit/90ee9729c21dd6e33f0e3a7ab8cd053b7c7a2716))
+* **deps:** bump cycjimmy/semantic-release-action from 3.4.2 to 4.0.0 ([f1752b9](https://github.com/rweich/eslint-config/commit/f1752b962acf939c67707988b4c96e97b8b6358f))
+* **deps:** bump step-security/harden-runner from 2.0.0 to 2.5.1 ([7ce6a84](https://github.com/rweich/eslint-config/commit/7ce6a848c5d26a18a9ad11cab1c3b97acba632c7))
+* drop support for node <18.17 ([28607d0](https://github.com/rweich/eslint-config/commit/28607d0120aeab033d63a3ed6c351d446fe08a49))
+* update dependencies (major) ([1ec9478](https://github.com/rweich/eslint-config/commit/1ec9478d722213c70126adf7ce20456dd8367c59))
+* update github actions ([5ddde7c](https://github.com/rweich/eslint-config/commit/5ddde7c886ec02745f44878e1ec76d1cf1932e89))
+
 ## [3.0.0](https://github.com/rweich/eslint-config/compare/v2.0.11...v3.0.0) (2023-08-27)
 
 
